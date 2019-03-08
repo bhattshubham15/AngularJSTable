@@ -2,19 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NewComponentComponent } from './new-component/new-component.component';
-import { NewDirectiveDirective } from './new-directive.directive';
+import { NewcomponentComponent } from './newcomponent/newcomponent.component';
+import { NewserviceService } from './newservice.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewComponentComponent,
-    NewDirectiveDirective
+    NewcomponentComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent, NewComponentComponent]
+  providers: [NewserviceService],
+  bootstrap: [AppComponent, NewcomponentComponent]
 })
 export class AppModule { }
